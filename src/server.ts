@@ -10,6 +10,7 @@ import {
 import { fastifySwagger } from "@fastify/swagger";
 import fastifySwaggerUi from "@fastify/swagger-ui";
 import { subscribeToEventRoute } from "./routes/subscribe-to-event-route";
+import { env } from "./env";
 
 const app = fastify().withTypeProvider<ZodTypeProvider>();
 
@@ -33,4 +34,4 @@ app.register(fastifySwaggerUi, {
 });
 app.register(subscribeToEventRoute);
 
-app.listen({ port: 3333 }).then(() => console.log("server running"));
+app.listen({ port: env.PORT }).then(() => console.log("server running"));
