@@ -7,6 +7,7 @@ const envShema = z.object({
   POSTGRES_DB: z.string(),
   POSTGRES_URL: z.string().url(),
   REDIS_URL: z.string().url(),
+  WEB_URL: z.string().url(),
 });
 
 export const env = envShema.parse(process.env);
