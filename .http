@@ -2,12 +2,20 @@ POST http://localhost:3333/subscriptions
 Content-Type: application/json
 
 {
-    "name":"deyvid",
-    "email":"deyvid@gmail.com"
+    "name":"usuario indicado",
+    "email":"indicado3@gmail.com",
+    "referrer":"bcfe255b-725f-488a-b599-dd445bfc253a"
 }
 
 ###
-GET http://localhost:3333/invites/deyvid123
+GET http://localhost:3333/invites/bcfe255b-725f-488a-b599-dd445bfc253a
 
 ###
-GET http://localhost:3333/subscribers/deyvid123/ranking/clicks
+GET http://localhost:3333/subscribers/bcfe255b-725f-488a-b599-dd445bfc253a/ranking/clicks
+
+###
+
+GET http://localhost:3333/subscribers/bcfe255b-725f-488a-b599-dd445bfc253a/ranking/count
+###
+
+GET http://localhost:3333/subscribers/bcfe255b-725f-488a-b599-dd445bfc253a/ranking/position

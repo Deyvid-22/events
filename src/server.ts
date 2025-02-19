@@ -13,6 +13,9 @@ import { subscribeToEventRoute } from "./routes/subscribe-to-event-route";
 import { env } from "./env";
 import { acessInviteLinkRoute } from "./routes/acess-invite-link-route";
 import { getSubscribeInviteClickRoute } from "./routes/get-subscribe-invite-click-route";
+import { getSubscribeInviteCount } from "./function/get-subscribe-invite-count";
+import { getSubscribeInviteCountRoute } from "./routes/get-subscribe-invite-count-route";
+import { getSubscribeRankingPositionRoute } from "./routes/get-subscriber-ranking-position-route";
 
 const app = fastify().withTypeProvider<ZodTypeProvider>();
 
@@ -38,4 +41,7 @@ app.register(fastifySwaggerUi, {
 app.register(subscribeToEventRoute);
 app.register(acessInviteLinkRoute);
 app.register(getSubscribeInviteClickRoute);
+app.register(getSubscribeInviteCountRoute);
+app.register(getSubscribeRankingPositionRoute);
+
 app.listen({ port: env.PORT }).then(() => console.log("server running"));
