@@ -20,6 +20,7 @@ export const subscribeToEventRoute: FastifyPluginAsyncZod = async (app) => {
         },
       },
     },
+
     async (request, reply) => {
       const { name, email } = request.body;
       const { subscriptionId } = await subscribeToEvent({ name, email });

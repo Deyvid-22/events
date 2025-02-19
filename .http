@@ -7,5 +7,7 @@ Content-Type: application/json
 }
 
 ###
-
 GET http://localhost:3333/invites/deyvid123
+
+###
+GET http://localhost:3333/subscribers/deyvid123/ranking/clicks
