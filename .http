@@ -3,8 +3,8 @@ Content-Type: application/json
 
 {
     "name":"usuario indicado",
-    "email":"indicado3@gmail.com",
-    "referrer":"bcfe255b-725f-488a-b599-dd445bfc253a"
+    "email":"indicado4@gmail.com",
+    "referrer":"94181257-d797-4341-960d-a8cbe7f0cc7c"
 }
 
 ###
@@ -19,3 +19,6 @@ GET http://localhost:3333/subscribers/bcfe255b-725f-488a-b599-dd445bfc253a/ranki
 ###
 
 GET http://localhost:3333/subscribers/bcfe255b-725f-488a-b599-dd445bfc253a/ranking/position
+
+###
+GET http://localhost:3333/ranking
